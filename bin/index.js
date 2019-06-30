@@ -119,11 +119,6 @@ yargs.command({
                     throw new Error('invalid type')
                 }
 
-                // return {
-                //     name,
-                //     type
-                // }
-
                 readAndReplace('../models/test-model.js', `${name}: ${type}`)
             })
 
